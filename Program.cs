@@ -11,7 +11,7 @@ app.MapGet("/api/health", () =>
     Results.Ok(new
     {
         Status = "Healthy",
-        Application = "StoreApi"
+        Application = "StoreApiv1"
     }));
 
 app.MapGet("/api/products", () =>
