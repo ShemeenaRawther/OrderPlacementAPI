@@ -14,12 +14,6 @@ app.MapGet("/api/health", () =>
         Application = "StoreApi"
     }));
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
-
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
