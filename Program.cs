@@ -7,6 +7,12 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+app.MapGet("/api/health", () =>
+    Results.Ok(new
+    {
+        Status = "Healthy",
+        Application = "StoreApi"
+    }));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
