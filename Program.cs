@@ -19,7 +19,8 @@ app.MapGet("/api/products", () =>
     return Results.Ok(new[]
     {
         new { Id = 1, Name = "Laptop", Price = 75000 },
-        new { Id = 2, Name = "Mouse", Price = 1500 }
+        new { Id = 2, Name = "Mouse", Price = 1500 },
+        new { Id = 3, Name = "Keyboard", Price = 1000 }
     });
 });
 
